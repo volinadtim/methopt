@@ -23,5 +23,4 @@ def steepest_descent(f, dfs, e):
         h_coef = sum(dx)
         coef = sum(x)
         h = coef / h_coef
-        print(h)
         x = [(x[i] - h * dx[i]) for i in range(n)]

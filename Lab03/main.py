@@ -8,7 +8,7 @@ def main():
     print(f"f = {inspect.getsource(f)}")
     print(f"[{a}:{b}], e1 = {ex}, e2 = {efx}")
     print("====")
-    print("Половинного деления")
+    print("Квадратная аппроксимация")
     res = square_interpolation(f, fd, a, b, ex, efx, x1, dx)
     print(round(res, round_digits))
 

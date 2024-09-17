@@ -12,9 +12,9 @@ def main():
     print("Градиентный спуск")
     res = gradient_descent(f, [dfx1, dfx2, dfx3], e, dx)
     print(*[round(i, round_digits) for i in res], sep=', ')
-    print("Наискорейший спуск")
-    res = steepest_descent(f, [dfx1, dfx2, dfx3], e)
-    print(round(res, round_digits))
+    # print("Наискорейший спуск")
+    # res = steepest_descent(f, [dfx1, dfx2, dfx3], e)
+    # print(round(res, round_digits))
 
 
 if __name__ == "__main__":

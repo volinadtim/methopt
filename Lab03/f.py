@@ -16,7 +16,7 @@ def fdd(x):
 a = 0
 b = math.pi / 4
 ex = 0.03
-efx = 2323230.0001
+efx = 0.0001
 round_digits = 4
-x1 = 1
-dx = 1
+x1 = 0.1
+dx = 0.1

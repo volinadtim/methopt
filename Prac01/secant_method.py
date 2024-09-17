@@ -1,4 +1,4 @@
-from f import a, b, e, f, fd, round_digits
+from Prac01.f import a, b, e, f, fd, round_digits
 
 RATIO = (1 + 5**0.5) / 2
 

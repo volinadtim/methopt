@@ -1,9 +1,9 @@
-from bisection_method import bisection_method
-from f import a, b, e, f, fd, fdd, round_digits
-from fibonacci import fibonacci_minimization
-from golden_ratio_method import golden_ratio_method
-from newton_method import newton_method
-from secant_method import secant_method
+from Prac01.bisection_method import bisection_method
+from Prac01.f import a, b, e, f, fd, fdd, round_digits
+from Prac01.fibonacci import fibonacci_minimization
+from Prac01.golden_ratio_method import golden_ratio_method
+from Prac01.newton_method import newton_method
+from Prac01.secant_method import secant_method
 import inspect
 
 
