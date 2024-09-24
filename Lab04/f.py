@@ -32,4 +32,4 @@ ex = 0.03
 efx = 0.0001
 round_digits = 4
 x1 = 1
-dx = 0.01
+dx = 0.5

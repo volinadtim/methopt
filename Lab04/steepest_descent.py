@@ -1,26 +1,20 @@
-from utils.grad import grad, vector_abs, normalize
+from utils.grad import grad
+from utils.log import clog
+from utils.vector import coef_multiply, vector_abs, normalize, scalar_multiply, sum_vector
+from Lab02.bisection_method import bisection_method
 
 
 def steepest_descent(f, dfs, e):
     n = len(dfs)
     M = [0] * n
     gradf = grad(*dfs)
-    x = M
+    cur_x = M
     while True:
-        dx = gradf(*x)
+        dx = gradf(*cur_x)
         if vector_abs(*dx) <= e:
-            return x
+            return cur_x
         dx = normalize(dx)
-        print(dx)
-        
-        # Need to count stepx
-        # expr = sum([exp(x[i] - h * dx[i]) for i in range(n)])
-        # print(expr)
-        # df = diff(expr, h)
-        # df
-        # print(d)
-        # input()
-        h_coef = sum(dx)
-        coef = sum(x)
-        h = coef / h_coef
-        x = [(x[i] - h * dx[i]) for i in range(n)]
+        clog(dx)
+
+        xp = bisection_method(lambda x: f(*sum_vector(cur_x, coef_multiply(x, dx))), -10, 10, e, verbose=False)
+        cur_x = sum_vector(cur_x, coef_multiply(xp, dx))

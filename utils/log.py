@@ -1,6 +1,6 @@
 from constants import VERBOSE
 
 
-def log(*arg):
-    if VERBOSE:
+def clog(*arg, verbose=VERBOSE):
+    if verbose:
         print(*arg)

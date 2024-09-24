@@ -1,7 +1,7 @@
 import time
 
-from Prac01.f import a, b, e, f
-from Prac01.golden_ratio_method import golden_ratio_method
+from Lab02.f import a, b, e, f
+from Lab02.golden_ratio_method import golden_ratio_method
 from utils import speed_test
 
 

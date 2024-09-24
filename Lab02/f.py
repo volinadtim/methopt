@@ -15,5 +15,5 @@ def fdd(x):
 
 a = 0
 b = math.pi / 4
-e = 0.03 / 100
+e = 0.03
 round_digits = 2

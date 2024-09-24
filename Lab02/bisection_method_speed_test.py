@@ -1,7 +1,7 @@
 import time
 
-from Prac01.f import a, b, e, f
-from Prac01.bisection_method import bisection_method
+from Lab02.f import a, b, e, f
+from Lab02.bisection_method import bisection_method
 
 
 def main():

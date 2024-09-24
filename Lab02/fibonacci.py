@@ -1,4 +1,4 @@
-from Prac01.f import a, b, e, f, round_digits
+from Lab02.f import a, b, e, f, round_digits
 
 Fs = {}
 
